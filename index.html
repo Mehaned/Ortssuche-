@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postleitzahlsuche</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="box">
+        <h1>Ortssuche mit PLZ</h1>
+        <label for="inp_plz">PLZ:</label>
+        <input id="inp_plz" type="text">
+        <select id="sel_stadt">
+            <!-- <option value="Musterdorf">Musterdorf</option> -->
+        </select>
+        <button type="button" id="btnWiki">Wikipedia-Einträge anzeigen</button>
+    </div>
+    <div id="wikiEintraege"></div>
+
+    
+</body>
+</html>
+
+<!-- 
+
+Beziehen Sie nach einer PLZ-Benutzereingabe (Textfeld) und einem 
+Button-Klick via AJAX-Request Wikipedia-Artikel, die sich auf den 
+Umkreis von 20km um die angegebene PLZ beziehen. 
+Es sollen dabei auschließlich deutschsprachige WIkipedia-Einträge 
+berücksichtigt werden.
+
+Stellen Sie alle gefundenen Einträge (max. 20) als Linkliste mit Titel 
+und Kurztext auf einer HTML-Seite dar.
+
+Das entsprechende Webservice und die zugehörige API-Dokumentation 
+finden Sie unter:
+https://www.geonames.org/export/wikipedia-webservice.html#findNearbyWikipedia
+
+Benutzen Sie für die Ausgabe der Daten in JSON dabei folgende API:  
+api.geonames.org/findNearbyWikipediaJSON
+
+Wichtig: Setzen Sie den GET-Parameter username auf wifiwien.
+
+ -->
